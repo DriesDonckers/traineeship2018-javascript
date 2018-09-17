@@ -26,3 +26,37 @@
 // TODO 9 think of 3 other types of shapes and extend from the correct super class
 
 // TODO 10 think of new methods you can add to the shapes we created (at least 2)
+
+export default class Shape {
+    
+    constructor(color, x, y){
+        this._color = color;
+        this._x = x;
+        this._y = y;
+    }
+
+    move(x, y){
+        this._x = x;
+        this._y = y;
+    }
+
+    get color () { return this._color }
+
+    set color (color) { this._color = color }
+
+    get x () { return this._x }
+
+    set x (x) { this._x = x }
+
+    get y () { return this._y }
+
+    set y (y) { this._y = y }
+
+    getColor(){
+        return this.color;
+    }
+
+    changeColor(newColor){
+        return this.color = newColor;
+    }
+}
